@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Formulario de Consolas y Viajes</h1>
+    <p id="description">Formulario para freecodecamp</p>
+    <form id="survey-form">
+        <div class="main-input">
+            <label for="name" id="name-label">Nombre</label>
+            <input type="text" id="name" required placeholder="Ingresa tu Nombre">
+        </div>
+
+        <div class="main-input">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="Ingresa tu Email">
+        </div>
+
+        <div class="main-input">
+            <label for="number" id="number-label">Edad (Opcional)</label>
+            <input type="number" id="number" min="0" max="100" required placeholder="Enter your name">
+        </div>
+
+        <div class="main-input">
+            <p>Selecciona tu Consola Favorita</p>
+            <select id="dropdown">
+                <option value="" disabled selected>Selecciona una Opcion</option>
+                <option value="xbox">Xbox One</option>
+                <option value="PS">PS5</option>
+                    <option value="nintendoSwitch">Nintendo Switch</option>
+                    <option value="nintendo3ds">Nintendo 3DS</option>
+                    <option value="pspvita">PSP Vita</option>
+            </select>
+        </div>
+
+        <div class="recommend">
+            <p>Recomendarias la Consola que elegiste?</p>
+            <input type="radio" id="definitely" name="recommend" value="Definitely">
+            <label for="definitely">Definitivamente</label>
+            <br>
+            <input type="radio" id="maybe" name="recommend" value="Maybe">
+            <label for="maybe">Quizas</label>
+            <br>
+            <input type="radio" id="not-sure" name="recommend" value="Not sure">
+            <label for="not-sure">No Estoy Seguro</label>
+            <br>
+        </div>
+
+        <div class="main-input">
+            <p>Cual es tu Juego Favorito?</p>
+            <select name="" id="">
+                <option value="" disabled selected>Selecciona una Opcion</option>
+                <option value="gears">Gears Of War</option>
+                <option value="smash">Smash</option>
+                <option value="persona5">Persona 5</option>
+                <option value="godofwar">God Of War</option>
+            </select>
+        </div>
+
+        <div id="improvement">
+            <p>Pais al que te Gustaria Conocer</p>
+            <input type="checkbox" id="paris" value="paris">
+            <label for="paris">Paris, France</label>
+            <br>
+            <input type="checkbox" id="newyork" value="newyork">
+            <label for="newyork">New York, USA</label>
+            <br>
+            <input type="checkbox" id="moscow" value="moscow">
+            <label for="moscow">Moscow, Russia</label>
+            <br>
+            <input type="checkbox" id="berlin" value="berlin">
+            <label for="berlin">Berlin, Germany</label>
+            <br>
+            <input type="checkbox" id="bogota" value="bogota">
+            <label for="bogota">Bogota, Colombia</label>
+            <br>
+            <input type="checkbox" id="madrid" value="madrid">
+            <label for="madrid">Madrid, España</label>
+            <br>
+            <input type="checkbox" id="santyago" value="santyago">
+            <label for="santyago">Santyago, Chile</label>
+            <br>
+            <input type="checkbox" id="sidney" value="sidney">
+            <label for="sidney">Sidney, Australia</label>
+            <br>
+            <input type="checkbox" id="quito" value="quito">
+            <label for="quito">Quito, Ecuador</label>
+            <br>
+            <input type="checkbox" id="lima" value="lima">
+            <label for="lima">Lima, Peru</label>
+            <br>
+            <input type="checkbox" id="cdmx" value="cdmx">
+            <label for="cdmx">CDMX, Mexico</label>
+            <br>
+        </div>
+
+        <div>
+            <p>Comentario Adicional</p>
+            <textarea cols="30" rows="10" placeholder="Ingresa tu Comentario...."></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
